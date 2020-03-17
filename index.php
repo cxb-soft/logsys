@@ -1,7 +1,7 @@
 <?php
     if( isset( $_GET['class'] ) ){
 	    $class = $_GET['class'];
-	    $db = mysqli_connect( "localhost" , "log_sys" , "wabadmin1" , "log_sys" );
+	    $db = mysqli_connect( "数据库地址" , "数据库用户名" , "数据库密码" , "数据库名" );
 	    $title_selector_com = " select * from titles where class='$class'";
 	    $title_selector = mysqli_query( $db , $title_selector_com );
 	    $titles = mysqli_fetch_assoc($title_selector);
