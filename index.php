@@ -17,7 +17,7 @@
 	    }
     }
     else{
-        header("refresh:0;http://log.bsot.cn/index_no.php");
+        header("refresh:0;签到地址/index_no.php");
         exit();
     }
 ?>

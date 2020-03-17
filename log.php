@@ -2,7 +2,7 @@
     if(isset($_POST['name'])){
         $name = $_POST['name'];
         $class = $_POST['class'];
-        $db = mysqli_connect("localhost","log_sys","wabadmin1","log_sys");
+        $db = mysqli_connect("数据库地址","数据库名","数据库密码","数据库名");
         $ip=$_SERVER["REMOTE_ADDR"];
         $commd = "select * from users where class='$class' and name='$name'";
         $result = mysqli_query($db,$commd);

@@ -6,7 +6,7 @@
         var $result = "No_user";
         function __construct( $name , $ip ){
             
-            $this -> db = mysqli_connect( "localhost" , "log_sys" , "wabadmin1" , "log_sys" );
+            	$this -> db = mysqli_connect( "数据库地址" , "数据库用户名" , "数据库密码" , "数据库名" );
             $this -> result = "";
             $this -> date_now = date("Y-m-d");
             $this -> time_now = date("H:i:s");
